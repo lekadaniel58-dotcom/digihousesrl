@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGI HOUSE | Forniture per la Casa, Edilizia e Serramenti</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#003366',
+                        primaryDark: '#002244',
+                        accent: '#0066cc',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-primary selection:text-white">
+
+    <!-- HEADER & NAVBAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-extrabold text-xl shadow-md group-hover:scale-105 transition-transform">
+                    D
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-extrabold tracking-tight text-primary leading-none">DIGI HOUSE</span>
+                    <span class="text-[10px] tracking-widest text-slate-500 font-semibold uppercase">Forniture & Design</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-700">
+                <a href="#porte-finestre" class="hover:text-primary transition-colors">Porte & Finestre</a>
+                <a href="#avvolgibili" class="hover:text-primary transition-colors">Avvolgibili & Zanzariere</a>
+                <a href="#ferramenta" class="hover:text-primary transition-colors">Ferramenta & Edilizia</a>
+                <a href="#contatti" class="hover:text-primary transition-colors">Contatti</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contatti" class="bg-primary hover:bg-primaryDark text-white px-5 py-2.5 rounded-full font-semibold text-sm shadow-sm transition-all duration-300 hover:shadow-md">
+                    Richiedi Preventivo
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-slate-700 text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3 font-medium">
+            <a href="#porte-finestre" class="block text-slate-700 hover:text-primary py-1">Porte & Finestre</a>
+            <a href="#avvolgibili" class="block text-slate-700 hover:text-primary py-1">Avvolgibili & Zanzariere</a>
+            <a href="#ferramenta" class="block text-slate-700 hover:text-primary py-1">Ferramenta & Edilizia</a>
+            <a href="#contatti" class="block text-slate-700 hover:text-primary py-1">Contatti</a>
+            <div class="pt-2">
+                <a href="#contatti" class="block text-center bg-primary text-white py-2.5 rounded-full font-semibold text-sm">Richiedi Preventivo</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-primary text-white pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
+        <!-- Background decorative pattern / overlay -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="inline-flex items-center gap-2 bg-white/10 text-white px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase border border-white/20">
+                        <i class="fa-solid fa-star text-amber-400 text-[10px]"></i> Eccellenza & Soluzioni per l'Abitare
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Il futuro della tua casa, <span class="text-sky-300">costruito con stile.</span>
+                    </h1>
+                    <p class="text-slate-200 text-lg sm:text-xl font-light leading-relaxed max-w-xl">
+                        Da DIGI HOUSE trovi la perfetta sintesi tra design d'interni, sistemi di protezione avanzati e forniture edili professionali per privati e professionisti.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#porte-finestre" class="bg-white text-primary hover:bg-slate-100 font-semibold px-8 py-4 rounded-full text-center shadow-lg transition-all duration-300 hover:scale-105">
+                            Esplora le Collezioni
+                        </a>
+                        <a href="#contatti" class="border border-white/40 hover:border-white text-white font-semibold px-8 py-4 rounded-full text-center transition-all duration-300 hover:bg-white/10">
+                            Parla con un Esperto
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 group">
+                        <!-- Placeholder immagine Hero -->
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="DIGI HOUSE Showroom" class="w-full h-[400px] sm:h-[480px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent flex items-end p-8">
+                            <div class="text-white">
+                                <p class="text-xs uppercase tracking-widest text-sky-300 font-semibold">Design & Qualità</p>
+                                <p class="text-xl font-bold">Soluzioni innovative per ogni spazio abitativo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS / VALUE PROPOSITION BAR -->
+    <section class="bg-white border-b border-slate-200 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 border-r last:border-none border-slate-100">
+                    <p class="text-3xl font-extrabold text-primary">100%</p>
+                    <p class="text-sm text-slate-500 font-medium mt-1">Qualità Garantita</p>
+                </div>
+                <div class="p-4 border-r last:border-none border-slate-100">
+                    <p class="text-3xl font-extrabold text-primary">Su Misura</p>
+                    <p class="text-sm text-slate-500 font-medium mt-1">Sistemi Personalizzati</p>
+                </div>
+                <div class="p-4 border-r last:border-none border-slate-100">
+                    <p class="text-3xl font-extrabold text-primary">Pro & B2C</p>
+                    <p class="text-sm text-slate-500 font-medium mt-1">Assortimento Completo</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-3xl font-extrabold text-primary">Assistenza</p>
+                    <p class="text-sm text-slate-500 font-medium mt-1">Dedicata e Tecnica</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEZIONE 1: PORTE INTERNE E FINESTRE (Ispirazione AIP Porte) -->
+    <section id="porte-finestre" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-primary font-semibold text-xs tracking-widest uppercase bg-primary/10 px-3 py-1 rounded-full">Design & Arredamento</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Porte Interne e Finestre</h2>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">Elementi d'arredo unici che uniscono estetica raffinata, materiali pregiati e performance isolanti superiori.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 group flex flex-col">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Porte Design" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-white/90 backdrop-blur text-primary text-xs font-bold px-3 py-1 rounded-full shadow">Collezione Interni</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Porte a Battente & Scorrevoli</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">Linee minimaliste, finiture effetto legno o laccate, pensate per integrarsi armoniosamente nel living moderno.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-primary uppercase tracking-wider">Scopri modelli</span>
+                            <i class="fa-solid fa-arrow-right text-primary text-sm group-hover:translate-x-1 transition-transform"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 group flex flex-col">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" alt="Finestre Isolanti" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-white/90 backdrop-blur text-primary text-xs font-bold px-3 py-1 rounded-full shadow">Thermal Comfort</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Infissi in PVC e Alluminio</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">Massimo isolamento termico e acustico, sicurezza antieffrazione e design pulito per la massima luminosità naturale.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-primary uppercase tracking-wider">Scopri infissi</span>
+                            <i class="fa-solid fa-arrow-right text-primary text-sm group-hover:translate-x-1 transition-transform"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 group flex flex-col">
+                    <div class="relative overflow-hidden h-72">
+                        <img src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=600&q=80" alt="Porte Vetro" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-white/90 backdrop-blur text-primary text-xs font-bold px-3 py-1 rounded-full shadow">Glass Elegance</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Porte in Vetro & Cristallo</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">Soluzioni divisorie trasparenti o decorate che amplificano gli spazi e donano una luminosità senza pari agli ambienti.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-primary uppercase tracking-wider">Scopri vetri</span>
+                            <i class="fa-solid fa-arrow-right text-primary text-sm group-hover:translate-x-1 transition-transform"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEZIONE 2: AVVOLGIBILI E ZANZARIERE (Ispirazione Zanzar) -->
+    <section class="py-24 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-primary font-semibold text-xs tracking-widest uppercase bg-primary/10 px-3 py-1 rounded-full">Protezione & Comfort</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Avvolgibili e Zanzariere su Misura</h2>
+                    <p class="text-slate-600 mt-4 text-base sm:text-lg leading-relaxed">
+                        Sistemi tecnici studiati per garantire il perfetto benessere abitativo. Dalla protezione solare alle schermaglie contro gli insetti, ogni prodotto DIGI HOUSE unisce robustezza, design discreto e praticità d'uso grazie a sistemi motorizzati intelligenti.
+                    </p>
+                    <div class="mt-8 space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-shield-halved text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Sistemi di Sicurezza e Oscuramento</h4>
+                                <p class="text-slate-600 text-sm">Avvolgibili in alluminio estruso e acciaio coibentato per la massima protezione e regolazione della luce.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-bug-slash text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Zanzariere Innovative</h4>
+                                <p class="text-slate-600 text-sm">Modelli a scorrimento verticale, laterale o plissè, progettati per mimetizzarsi con il serramento ed evitare intralci.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-bolt text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Motorizzazioni e Domotica</h4>
+                                <p class="text-slate-600 text-sm">Automazioni gestibili tramite telecomando o assistenti vocali per il massimo comfort quotidiano.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="rounded-2xl overflow-hidden shadow-md h-64">
+                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=500&q=80" alt="Avvolgibili" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="bg-primary text-white p-6 rounded-2xl shadow-md flex flex-col justify-center">
+                            <p class="text-3xl font-extrabold">+15 Modelli</p>
+                            <p class="text-xs text-sky-200 mt-1">Personalizzabili in ogni colore RAL</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4 pt-8">
+                        <div class="bg-slate-100 p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-center">
+                            <p class="text-xs uppercase font-bold text-primary tracking-wider">Garanzia</p>
+                            <p class="text-xl font-bold text-slate-900 mt-1">Resistenza ai Raggi UV e Intemperie</p>
+                        </div>
+                        <div class="rounded-2xl overflow-hidden shadow-md h-64">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=80" alt="Zanzariere" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEZIONE 3: FERRAMENTA, MATERIALI EDILI E PITTURA (Ispirazione Bricoman/Tecnomat) -->
+    <section id="ferramenta" class="py-24 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-primary font-semibold text-xs tracking-widest uppercase bg-primary/10 px-3 py-1 rounded-full">Catalogo Professionale</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Ferramenta, Edilizia e Pittura</h2>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">Tutto il necessario per il cantiere, la ristrutturazione e il fai-da-te. Grandi quantità, assortimento professionale e pronta consegna.</p>
+            </div>
+
+            <!-- Griglia Categorie Tipo Tecnomat -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                <!-- Categoria 1 -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-primary hover:shadow-lg transition-all text-center group cursor-pointer flex flex-col items-center">
+                    <div class="w-14 h-14 bg-slate-50 rounded-full flex items-center justify-center text-primary text-2xl group-hover:bg-primary group-hover:text-white transition-colors mb-4">
+                        <i class="fa-solid fa-hammer"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-sm">Elettroutensili</h3>
+                    <p class="text-xs text-slate-500 mt-1">Trapani, seghe, laser</p>
+                </div>
+                <!-- Categoria 2 -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-primary hover:shadow-lg transition-all text-center group cursor-pointer flex flex-col items-center">
+                    <div class="w-14 h-14 bg-slate-50 rounded-full flex items-center justify-center text-primary text-2xl group-hover:bg-primary group-hover:text-white transition-colors mb-4">
+                        <i class="fa-solid fa-faucet-drip"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-sm">Idraulica</h3>
+                    <p class="text-xs text-slate-500 mt-1">Raccordi, tubi, sanitari</p>
+                </div>
+                <!-- Categoria 3 -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-primary hover:shadow-lg transition-all text-center group cursor-pointer flex flex-col items-center">
+                    <div class="w-14 h-14 bg-slate-50 rounded-full flex items-center justify-center text-primary text-2xl group-hover:bg-primary group-hover:text-white transition-colors mb-4">
+                        <i class="fa-solid fa-paint-roller"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-sm">Colorificio</h3>
+                    <p class="text-xs text-slate-500 mt-1">Idropitture, smalti</p>
+                </div>
+                <!-- Categoria 4 -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-primary hover:shadow-lg transition-all text-center group cursor-pointer flex flex-col items-center">
+                    <div class="w-14 h-14 bg-slate-50 rounded-full flex items-center justify-center text-primary text-2xl group-hover:bg-primary group-hover:text-white transition-colors mb-4">
+                        <i class="fa-solid fa-bolt-lightning"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-sm">Materiale Elettrico</h3>
+                    <p class="text-xs text-slate-500 mt-1">Cavi, quadri, frutti</p>
+                </div>
+                <!-- Categoria 5 -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-primary hover:shadow-lg transition-all text-center group cursor-pointer flex flex-col items-center">
+                    <div class="w-14 h-14 bg-slate-50 rounded-full flex items-center justify-center text-primary text-2xl group-hover:bg-primary group-hover:text-white transition-colors mb-4">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-sm">Edilizia</h3>
+                    <p class="text-xs text-slate-500 mt-1">Cementi, isolanti, colle</p>
+                </div>
+                <!-- Categoria 6 -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 hover:border-primary hover:shadow-lg transition-all text-center group cursor-pointer flex flex-col items-center">
+                    <div class="w-14 h-14 bg-slate-50 rounded-full flex items-center justify-center text-primary text-2xl group-hover:bg-primary group-hover:text-white transition-colors mb-4">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-sm">Ferramenta Tecnica</h3>
+                    <p class="text-xs text-slate-500 mt-1">Viteria, serrature, tasselli</p>
+                </div>
+            </div>
+
+            <!-- Banner Promozionale B2B -->
+            <div class="mt-12 bg-primary rounded-2xl p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl">
+                <div class="space-y-3">
+                    <span class="bg-white/20 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Partita IVA & Professionisti</span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold">Sei un professionista del settore?</h3>
+                    <p class="text-slate-200 text-sm sm:text-base max-w-xl">Scopri i listini dedicati, le forniture programmate per i cantieri e la corsia preferenziale per il ritiro in magazzino.</p>
+                </div>
+                <a href="#contatti" class="bg-white text-primary hover:bg-slate-100 font-bold px-8 py-3.5 rounded-full shadow-lg whitespace-nowrap transition-transform hover:scale-105">
+                    Richiedi Conto Pro
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTATTI -->
+    <section id="contatti" class="bg-slate-900 text-white py-24 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Info & Mappa Finta -->
+                <div class="space-y-8">
+                    <div>
+                        <span class="text-sky-400 font-semibold text-xs tracking-widest uppercase bg-sky-950 px-3 py-1 rounded-full border border-sky-800">Contattaci</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold mt-3">Vieni a trovarci o scrivici</h2>
+                        <p class="text-slate-400 mt-3 text-base">Il nostro team di esperti è a tua disposizione per consulenze su misura, preventivi gratuiti e supporto tecnico.</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 text-sky-400 flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-slate-300">Indirizzo Showroom & Magazzino</h4>
+                                <p class="text-slate-400 text-sm">Via dell'Artigianato 42, 00100 Roma (RM)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 text-sky-400 flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-slate-300">Telefono</h4>
+                                <p class="text-slate-400 text-sm">+39 06 12345678</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 text-sky-400 flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-slate-300">Email</h4>
+                                <p class="text-slate-400 text-sm">info@digihouseforniture.it</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Finta Mappa / Box interattivo -->
+                    <div class="rounded-2xl overflow-hidden border border-slate-800 bg-slate-800/50 h-48 relative flex items-center justify-center group">
+                        <div class="absolute inset-0 opacity-40 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:12px_12px]"></div>
+                        <div class="relative z-10 text-center p-4">
+                            <i class="fa-solid fa-map-location-dot text-4xl text-sky-400 mb-2"></i>
+                            <p class="font-bold text-white text-sm">DIGI HOUSE Showroom Center</p>
+                            <p class="text-xs text-slate-400 mt-1">Clicca per aprire su Google Maps</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modulo di Contatto -->
+                <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700 shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-2">Invia un messaggio</h3>
+                    <p class="text-slate-400 text-sm mb-6">Compila il form qui sotto, ti risponderemo nel minor tempo possibile.</p>
+                    
+                    <form onsubmit="event.preventDefault(); alert('Messaggio inviato con successo! Ti ricontatteremo presto.'); this.reset();" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Nome e Cognome</label>
+                                <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-sky-400 transition-colors" placeholder="Mario Rossi">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Telefono</label>
+                                <input type="tel" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-sky-400 transition-colors" placeholder="+39 333 1234567">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email</label>
+                            <input type="email" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-sky-400 transition-colors" placeholder="mario.rossi@email.it">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Interesse principale</label>
+                            <select class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-sky-400 transition-colors">
+                                <option>Porte Interne e Finestre</option>
+                                <option>Avvolgibili e Zanzariere</option>
+                                <option>Ferramenta, Edilizia e Pittura</option>
+                                <option>Altro / Richiesta Preventivo Generale</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Messaggio</label>
+                            <textarea rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-sky-400 transition-colors" placeholder="Scrivi qui i dettagli della tua richiesta..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold py-4 rounded-xl transition-all shadow-lg hover:shadow-sky-500/20">
+                            Invia Richiesta
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="mt-20 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 DIGI HOUSE. Tutti i diritti riservati.</p>
+                <div class="flex gap-6 mt-4 sm:mt-0">
+                    <a href="#" class="hover:text-slate-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-300">Cookie Policy</a>
+                    <a href="#" class="hover:text-slate-300">Note Legali</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script per menu mobile -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Chiudi il menu mobile quando si clicca un link
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
